@@ -30,24 +30,27 @@ public class Ejemplo06 {
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
         while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
-            calificacion = entrada.nextDouble();
-
-            if (calificacion > 20) {
-                calificacion = 20;
-            }
-            suma_total = suma_total + calificacion;
-
-            // proceso para salir del ciclo.
-            System.out.println("Ingrese el valor -1 para salir del ciclo");
-            int temporal = entrada.nextInt();
-
-            if (temporal == -1) {
-                bandera = false;
-            }
         }
+        calificacion = entrada.nextDouble();
 
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        if (calificacion > 20) {
+            calificacion = 20;
+        
+        }
+        suma_total = suma_total + calificacion;
+
+        // proceso para salir del ciclo.
+        System.out.println("Ingrese el valor -1 para salir del ciclo");
+        int temporal = entrada.nextInt();
+
+        if (temporal == -1) {
+            bandera = false;
+        }
+    }
+
+    System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
 
     }
-}
+ }

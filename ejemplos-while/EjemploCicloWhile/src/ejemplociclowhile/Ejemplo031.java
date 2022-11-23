@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo03 {
+public class Ejemplo031 {
 
     /**
      * @param args the command line arguments
@@ -23,8 +23,9 @@ public class Ejemplo03 {
         entrada.useLocale(Locale.US);
         int limite = 5;
         int contador = 1;
-        int suma = 0;
+        double suma = 0;
         int valor_ingresado;
+        double promedio;
 
         while (contador <= limite) {
             System.out.println("Ingrese el valor a sumar");
@@ -33,8 +34,9 @@ public class Ejemplo03 {
             System.out.printf("Valor ingresado %d\n", valor_ingresado);
             contador = contador + 1;
         }
-
-        System.out.printf("La suma final es %d\n", suma);
+        promedio = suma / limite;
+        System.out.printf("La suma final es %.2f\n", suma);
+        System.out.printf("El promedio final es %.2f\n", promedio);
 
     }
 }
